@@ -35,7 +35,7 @@
   window.setTimeout(()=>previous.classList.remove('is-leaving'),900);
  }
  let interval;
- function start(){window.clearInterval(interval);interval=window.setInterval(()=>show((current+1)%slides.length),15000)}
+ function start(){window.clearInterval(interval);interval=window.setInterval(()=>show((current+1)%slides.length),8000)}
  dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start()}));
  document.addEventListener('visibilitychange',()=>{if(document.hidden)window.clearInterval(interval);else start()});
  start();
