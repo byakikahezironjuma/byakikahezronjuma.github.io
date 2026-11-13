@@ -1,43 +1,924 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Byakika Heziron Juma — electrical engineering, power systems research and project management.">
-<title>Byakika Heziron Juma | Electrical Engineer</title>
-<style>
-:root{--bg:#0b1427;--panel:#1b2940;--line:#263650;--text:#f5f8ff;--muted:#a6b4cb;--blue:#248cf0;--cyan:#79d8e4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 3% 0%,#142a4b 0%,transparent 35%),radial-gradient(circle at 100% 55%,#102a4d 0%,transparent 36%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh}body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(#ffffff07 1px,transparent 1px),linear-gradient(90deg,#ffffff07 1px,transparent 1px);background-size:58px 58px;pointer-events:none}a{color:inherit;text-decoration:none}.wrap{max-width:1130px;margin:auto;padding:0 25px;position:relative}.nav{margin:14px auto 0;border:1px solid #ffffff16;border-radius:30px;background:#0c1629ed;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;box-shadow:0 10px 40px #0002}.identity{display:flex;align-items:center;gap:12px;min-width:230px}.logo{display:grid;place-items:center;background:linear-gradient(140deg,#00b4e9,#1677df);width:38px;height:38px;border-radius:50%;font-size:13px;font-weight:800;box-shadow:0 0 25px #008cff44}.identity strong{display:block;font-size:13px}.identity small{color:var(--muted);font-size:10px}.links{display:flex;align-items:center;gap:25px;font-size:12px;color:#c5d0df}.links a:hover{color:white}.links a.active{background:var(--blue);color:white;padding:9px 17px;border-radius:25px}.nav-cta,.btn{background:var(--blue);border-radius:30px;padding:11px 19px;font-weight:650;font-size:12px;display:inline-block}.nav-cta:hover,.btn:hover{background:#4aa6ff}.hero{display:grid;grid-template-columns:1.12fr .88fr;gap:55px;align-items:start;padding:65px 30px 85px}.eyebrow{display:inline-block;letter-spacing:2px;color:var(--cyan);border:1px solid #ffffff1c;background:#ffffff09;border-radius:30px;padding:8px 14px;font-size:10px;font-weight:800}.hero h1{font-size:clamp(40px,5vw,67px);line-height:1.16;letter-spacing:-2px;margin:27px 0 20px;max-width:650px}.hero h1 span{color:#78bfff}.hero p{max-width:540px;line-height:1.8;color:var(--muted);font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.btn.secondary{background:transparent;border:1px solid #40516b}.profile{background:linear-gradient(150deg,#222e46,#17243a);border:1px solid #ffffff19;padding:19px;border-radius:28px;box-shadow:0 25px 65px #0003}.portrait{height:375px;border-radius:22px;background:linear-gradient(145deg,#304866,#0b182d);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.monogram{font-size:110px;font-weight:800;letter-spacing:-9px;color:#d9eafa22}.portrait-label{position:absolute;bottom:0;left:0;right:0;padding:45px 18px 18px;background:linear-gradient(transparent,#071222ec)}.portrait-label b{display:block;color:var(--cyan);letter-spacing:2px;font-size:11px}.portrait-label small{font-size:12px}.profile-info{padding:22px 2px 5px}.tag{color:var(--cyan);font-size:11px;letter-spacing:2px;font-weight:750}.profile-info h2{font-size:22px;margin:10px 0}.profile-info p{color:var(--muted);font-size:13px;line-height:1.8}.status{display:inline-block;border-radius:30px;padding:7px 11px;background:#0e695b55;color:#7de7c4;font-size:11px;margin-top:4px}.section{padding:60px 30px;border-top:1px solid #ffffff12;scroll-margin-top:20px}.section h2{font-size:34px;margin:12px 0}.section>p{max-width:760px;color:var(--muted);line-height:1.85}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.card{background:#19273cb8;border:1px solid #ffffff14;border-radius:18px;padding:25px;min-height:180px}.card h3{margin-top:0;font-size:18px}.card p{color:var(--muted);font-size:14px;line-height:1.75}.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.footer{text-align:center;color:#8191a9;font-size:12px;padding:35px}.float-contact{position:fixed;right:24px;bottom:22px;border-radius:30px;background:#0fbf95;padding:15px 20px;font-size:12px;font-weight:700;box-shadow:0 10px 35px #04bc7555;z-index:3}@media(max-width:900px){.nav{flex-wrap:wrap}.links{order:3;width:100%;justify-content:center;flex-wrap:wrap;gap:14px}.hero{grid-template-columns:1fr;gap:35px;padding-top:50px}.profile{max-width:530px}.cards{grid-template-columns:1fr 1fr}}@media(max-width:560px){.wrap{padding:0 13px}.nav{border-radius:20px}.nav-cta{display:none}.hero{padding:48px 10px}.hero h1{font-size:42px;letter-spacing:-1px}.section{padding:45px 10px}.cards{grid-template-columns:1fr}.portrait{height:320px}.float-contact{right:12px;bottom:12px;padding:12px 15px}}
-.portrait{isolation:isolate}.portrait-slides{position:absolute;inset:0;overflow:hidden}.portrait-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:0;transform:translateX(8%);transition:opacity .85s ease,transform .85s ease}.portrait-slide.is-active{opacity:1;transform:translateX(0)}.portrait-slide.is-leaving{opacity:0;transform:translateX(-8%)}.portrait-label{z-index:2;pointer-events:none}.slide-dots{position:absolute;z-index:3;right:15px;top:15px;display:flex;gap:8px}.slide-dot{border:1px solid #ffffffa0;background:#0008;width:10px;height:10px;border-radius:50%;cursor:pointer;padding:0}.slide-dot[aria-current="true"]{background:#69bdff;border-color:#69bdff}.slide-dot:focus-visible{outline:2px solid white;outline-offset:3px}@media(prefers-reduced-motion:reduce){.portrait-slide{transition:none;transform:none}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional website of Byakika Heziron Juma, Electrical Engineer and Power Systems Researcher.">
+  <title>Byakika Heziron Juma | Electrical Engineer</title>
+
+  <style>
+    :root {
+      --bg: #071426;
+      --card: #101f36;
+      --blue: #2585ff;
+      --light-blue: #65b5ff;
+      --text: #f5f8ff;
+      --muted: #a5b5cb;
+      --border: rgba(255,255,255,0.10);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(rgba(100,150,220,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100,150,220,.035) 1px, transparent 1px);
+      background-size: 42px 42px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1150px, 90%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 0;
+      background: rgba(7,20,38,.94);
+      backdrop-filter: blur(12px);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      background: #102039;
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      padding: 13px 25px;
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .logo span, .highlight {
+      color: var(--light-blue);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      color: #d3dfef;
+      transition: color .3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--light-blue);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 60px;
+      padding: 65px 0 95px;
+    }
+
+    .eyebrow {
+      color: var(--light-blue);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 {
+      font-size: clamp(17px, 2vw, 23px);
+      color: var(--light-blue);
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 580px;
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform .3s, background .3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-outline {
+      border: 1px solid #49739d;
+      color: white;
+    }
+
+    /* PHOTO SLIDESHOW */
+    .profile-card {
+      background: linear-gradient(145deg, #142a48, #0b1a30);
+      padding: 18px;
+      border-radius: 25px;
+      border: 1px solid rgba(100,170,255,.25);
+      box-shadow: 0 25px 70px rgba(0,0,0,.3);
+    }
+
+    .slideshow {
+      width: 100%;
+      height: 370px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 17px;
+      background: #172c46;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+      opacity: 0;
+      transform: translateX(25px) scale(1.03);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .slide.active {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+
+    .profile-info {
+      text-align: center;
+      padding: 22px 8px 8px;
+    }
+
+    .profile-info h3 {
+      font-size: 21px;
+      margin-bottom: 5px;
+    }
+
+    .profile-info p {
+      color: var(--light-blue);
+      font-size: 13px;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 17px;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      border: 0;
+      background: #60738b;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--blue);
+      width: 23px;
+      border-radius: 8px;
+    }
+
+    /* GENERAL SECTIONS */
+    section.content-section {
+      padding: 85px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-heading {
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(28px, 3.5vw, 40px);
+      margin-bottom: 10px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 730px;
+    }
+
+    .card {
+      background: rgba(16,31,54,.92);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 27px;
+    }
+
+    .card h3 {
+      color: #f2f7ff;
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-top: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 22px;
+    }
+
+    .about-text {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 1000px;
+    }
+
+    .about-text p {
+      margin-bottom: 17px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(37,133,255,.13);
+      color: #87bfff;
+      border: 1px solid rgba(37,133,255,.22);
+      border-radius: 20px;
+      padding: 5px 12px;
+      font-size: 12px;
+      margin: 7px 6px 0 0;
+    }
+
+    .institution {
+      color: var(--light-blue) !important;
+      margin-bottom: 10px;
+    }
+
+    .status {
+      color: #8ce0bc !important;
+      font-size: 13px !important;
+      margin-bottom: 8px;
+    }
+
+    .project-number {
+      color: var(--light-blue);
+      font-weight: bold;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+    .contact-box {
+      text-align: center;
+      max-width: 760px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .floating-contact {
+      position: fixed;
+      right: 23px;
+      bottom: 23px;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue);
+      border-radius: 50%;
+      box-shadow: 0 8px 30px rgba(37,133,255,.4);
+      z-index: 100;
+      font-size: 24px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      nav {
+        flex-direction: column;
+        border-radius: 22px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 50px 0 75px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .profile-card {
+        max-width: 470px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .slideshow {
+        height: 320px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .card {
+        padding: 21px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .slide, .btn {
+        transition: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-<header class="nav"><a class="identity" href="#home"><span class="logo">BH</span><span><strong>Byakika Heziron Juma</strong><small>Electrical Engineer · Power Systems</small></span></a><nav class="links" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#expertise">Expertise</a><a href="#projects">Portfolio</a><a href="#research">Research</a><a href="#about">Profile</a><a href="#contact">Contact</a></nav><a class="nav-cta" href="#contact">Contact Me</a></header>
-<main>
-<section class="hero" id="home"><div><span class="eyebrow">ELECTRICAL ENGINEERING & POWER SYSTEMS</span><h1>Engineering smarter <span>power systems</span> for a sustainable future.</h1><p>I'm Byakika Heziron Juma, an electrical engineer working across electrical infrastructure, renewable energy systems, engineering project management, and power systems research.</p><div class="actions"><a class="btn" href="#projects">Explore My Work</a><a class="btn secondary" href="#research">My Research</a></div></div><aside class="profile"><div class="portrait" aria-label="Professional photo slideshow"><div class="portrait-slides"><img class="portrait-slide is-active" src="portrait-1.jpg" alt="Byakika Heziron Juma in graduation attire" fetchpriority="high"><img class="portrait-slide" src="portrait-2.jpg" alt="Byakika Heziron Juma in graduation attire, front-facing" loading="lazy"><img class="portrait-slide" src="portrait-3.jpg" alt="Byakika Heziron Juma in a white suit" loading="lazy"></div><div class="slide-dots" aria-label="Select portrait"><button class="slide-dot" type="button" aria-label="Show photo 1" aria-current="true"></button><button class="slide-dot" type="button" aria-label="Show photo 2" aria-current="false"></button><button class="slide-dot" type="button" aria-label="Show photo 3" aria-current="false"></button></div><div class="portrait-label"><b>BYAKIKA HEZIRON JUMA</b><small>Electrical Engineer & Power Systems Researcher</small></div></div><div class="profile-info"><span class="tag">PROFESSIONAL PROFILE</span><h2>Byakika Heziron Juma</h2><p>Uganda · Electrical engineering · Renewable energy · Project management</p><span class="status">Open to professional collaborations</span></div></aside></section>
-<section class="section" id="expertise"><span class="tag">WHAT I DO</span><h2>Areas of Expertise</h2><p>My professional interests connect practical electrical engineering with research into modern and sustainable energy systems.</p><div class="cards"><article class="card"><h3>⚡ Electrical Infrastructure</h3><p>Electrical installations, inspection, maintenance, and infrastructure project supervision.</p></article><article class="card"><h3>☀️ Renewable Energy</h3><p>Solar PV, wind energy, hybrid renewable systems, and energy storage integration.</p></article><article class="card"><h3>📊 Engineering Management</h3><p>Project planning, technical oversight, procurement support, and delivery coordination.</p></article></div></section>
-<section class="section" id="projects"><span class="tag">SELECTED EXPERIENCE</span><h2>Engineering Portfolio</h2><div class="cards"><article class="card"><h3>Urban Streetlighting</h3><p>Inspection, supervision, and maintenance of municipal lighting infrastructure.</p></article><article class="card"><h3>Public Electrical Infrastructure</h3><p>Electrical engineering support for public facilities and urban infrastructure.</p></article><article class="card"><h3>Hybrid Renewable Microgrid</h3><p>Simulation and control of solar, wind, battery, and supercapacitor energy systems.</p></article></div></section>
-<section class="section" id="research"><span class="tag">ACADEMIC WORK</span><h2>Research & Publications</h2><p>My master's research examines the design and optimal control of a hybrid renewable energy system with advanced storage for frequency stability. It considers photovoltaic and wind generation, battery and supercapacitor storage, and model predictive control in an islanded microgrid.</p><p>Publications and downloadable research materials will be added here as they become available.</p></section>
-<section class="section" id="about"><span class="tag">ABOUT ME</span><h2>Professional Profile</h2><p>I am an electrical engineering professional with experience in public-sector infrastructure and industrial power systems. My academic interests include renewable energy integration, energy storage, microgrid dynamics, and advanced control using MATLAB/Simulink.</p><p>A downloadable CV and additional professional credentials will be added to this section.</p></section>
-<section class="section" id="contact"><span class="tag">GET IN TOUCH</span><h2>Let's Connect</h2><p>Interested in engineering collaboration, research, or professional opportunities? Contact details and verified professional profiles will be added here.</p><div class="contact-links"><a class="btn" href="https://github.com/byakikahezronjuma" target="_blank" rel="noopener noreferrer">GitHub Profile</a><a class="btn secondary" href="#home">Back to Top</a></div></section>
-</main><footer class="footer">© <span id="year">2026</span> Byakika Heziron Juma. All rights reserved.</footer>
-</div><a class="float-contact" href="#contact">✉ Contact Me</a><script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-<script>
-(function(){
- const slides=[...document.querySelectorAll('.portrait-slide')];
- const dots=[...document.querySelectorAll('.slide-dot')];
- let current=0;
- function show(next){
-  if(next===current)return;
-  const previous=slides[current];
-  previous.classList.remove('is-active');previous.classList.add('is-leaving');
-  current=next;slides[current].classList.remove('is-leaving');slides[current].classList.add('is-active');
-  dots.forEach((dot,i)=>dot.setAttribute('aria-current',String(i===current)));
-  window.setTimeout(()=>previous.classList.remove('is-leaving'),900);
- }
- let interval;
- function start(){window.clearInterval(interval);interval=window.setInterval(()=>show((current+1)%slides.length),8000)}
- dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i);start()}));
- document.addEventListener('visibilitychange',()=>{if(document.hidden)window.clearInterval(interval);else start()});
- start();
-})();
-</script></body></html>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#home" class="logo">HEZRON<span>.</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Profile</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="container hero">
+
+      <div>
+        <div class="eyebrow">
+          Electrical Engineering & Power Systems
+        </div>
+
+        <h1>
+          Hello, I'm<br>
+          <span class="highlight">Byakika Heziron Juma.</span>
+        </h1>
+
+        <h2>
+          Electrical Engineer and Power Systems Researcher
+        </h2>
+
+        <p>
+          An electrical engineering professional with experience
+          in electrical infrastructure, power generation,
+          renewable energy systems, and engineering project
+          management. Passionate about power system stability,
+          advanced energy storage, and sustainable energy solutions.
+        </p>
+
+        <div class="buttons">
+          <a href="#portfolio" class="btn btn-primary">
+            Explore My Work
+          </a>
+
+          <a href="#about" class="btn btn-outline">
+            About Me
+          </a>
+        </div>
+      </div>
+
+      <!-- EXISTING PHOTOGRAPHS -->
+      <div class="profile-card">
+
+        <div class="slideshow" id="slideshow">
+          <img
+            src="portrait-1.jpg"
+            alt="Portrait photograph of Byakika Heziron Juma"
+            class="slide active"
+          >
+
+          <img
+            src="portrait-2.jpg"
+            alt="Second photograph of Byakika Heziron Juma"
+            class="slide"
+          >
+
+          <img
+            src="portrait-3.jpg"
+            alt="Third photograph of Byakika Heziron Juma"
+            class="slide"
+          >
+        </div>
+
+        <div class="profile-info">
+          <h3>Byakika Heziron Juma</h3>
+          <p>Electrical Engineer | Power Systems Researcher</p>
+
+          <div class="dots">
+            <button class="dot active"
+              onclick="showSlide(0)"
+              aria-label="Show photograph 1"></button>
+
+            <button class="dot"
+              onclick="showSlide(1)"
+              aria-label="Show photograph 2"></button>
+
+            <button class="dot"
+              onclick="showSlide(2)"
+              aria-label="Show photograph 3"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="content-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Professional Profile</div>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-text">
+
+          <p>
+            I am Byakika Heziron Juma, an Electrical Engineer
+            and Power Systems Researcher with professional
+            experience in electrical infrastructure development,
+            industrial power generation, engineering project
+            supervision, and renewable energy systems.
+          </p>
+
+          <p>
+            I currently serve as an Electrical Engineering
+            Officer at Mbarara City Council, Uganda. My work
+            involves supervision of electrical infrastructure
+            projects, inspection and maintenance of electrical
+            installations, streetlighting systems, and technical
+            support in engineering procurement and contract
+            implementation.
+          </p>
+
+          <p>
+            I hold a Bachelor of Science in Electrical
+            Engineering from Mbarara University of Science
+            and Technology and a Postgraduate Diploma in
+            Project Planning and Management from Uganda
+            Management Institute.
+          </p>
+
+          <p>
+            I am also towards completion of a Master of Science
+            in Power Systems Engineering at Makerere University,
+            where my research focuses on hybrid renewable
+            energy systems, advanced energy storage, and
+            frequency stability.
+          </p>
+
+          <p>
+            My long-term professional interests include
+            power systems research, renewable energy integration,
+            advanced control systems, engineering project
+            management, and contributing to engineering
+            education and academic research.
+          </p>
+
+        </div>
+
+        <div>
+          <span class="tag">Power Systems Engineering</span>
+          <span class="tag">Renewable Energy</span>
+          <span class="tag">MATLAB / Simulink</span>
+          <span class="tag">Model Predictive Control</span>
+          <span class="tag">Project Management</span>
+          <span class="tag">Electrical Infrastructure</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="content-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Academic Background</div>
+          <h2>Education & Qualifications</h2>
+          <p>
+            My academic training combines electrical
+            engineering, power systems, and project management.
+          </p>
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Master of Science in Power Systems Engineering</h3>
+            <p class="institution">Makerere University</p>
+            <p class="status">Towards completion</p>
+            <p>
+              Advanced studies and research in power systems,
+              renewable energy integration, energy storage,
+              frequency stability, and control systems.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Postgraduate Diploma in Project Planning and Management</h3>
+            <p class="institution">Uganda Management Institute</p>
+            <p>
+              Postgraduate training in project planning,
+              implementation, monitoring, evaluation,
+              and management.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Bachelor of Science in Electrical Engineering</h3>
+            <p class="institution">
+              Mbarara University of Science and Technology
+            </p>
+            <p>
+              Undergraduate engineering education covering
+              electrical machines, power systems, control,
+              electronics, and electrical engineering principles.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="content-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Career History</div>
+          <h2>Professional Experience</h2>
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Electrical Engineering Officer</h3>
+            <p class="institution">
+              Mbarara City Council, Uganda
+            </p>
+            <p class="status">Current position</p>
+
+            <p>
+              Supporting the planning, supervision,
+              inspection, and maintenance of municipal
+              electrical infrastructure.
+            </p>
+
+            <ul>
+              <li>Supervision of electrical infrastructure projects.</li>
+              <li>Inspection and maintenance of streetlighting systems.</li>
+              <li>Electrical installation inspections and technical assessments.</li>
+              <li>Technical participation in procurement and contract management.</li>
+              <li>Preparation of engineering reports and recommendations.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Graduate Trainee — Electrical Engineering</h3>
+            <p class="institution">
+              Kakira Sugar Power Plant, Uganda
+            </p>
+
+            <p>
+              Gained practical experience in industrial
+              electrical engineering and cogeneration
+              power plant operations and maintenance.
+            </p>
+
+            <ul>
+              <li>Electrical equipment installation and maintenance.</li>
+              <li>Electrical machines and motor starting systems.</li>
+              <li>Variable Frequency Drive (VFD) programming.</li>
+              <li>Power factor correction and electrical protection.</li>
+              <li>Generator synchronization and power plant systems.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="content-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Engineering Work</div>
+          <h2>Engineering Portfolio</h2>
+          <p>
+            Selected areas of professional experience,
+            engineering practice, and technical research.
+          </p>
+        </div>
+
+        <div class="grid">
+
+          <div class="card">
+            <div class="project-number">PROJECT AREA 01</div>
+            <h3>Solar Streetlighting Infrastructure</h3>
+            <p>
+              Engineering supervision, inspection,
+              performance assessment, and maintenance
+              of solar-powered streetlighting systems
+              within Mbarara City.
+            </p>
+            <span class="tag">Solar PV</span>
+            <span class="tag">Electrical Infrastructure</span>
+          </div>
+
+          <div class="card">
+            <div class="project-number">PROJECT AREA 02</div>
+            <h3>Municipal Electrical Installations</h3>
+            <p>
+              Technical work involving electrical
+              installations, infrastructure maintenance,
+              fault assessment, and electrical services
+              in public facilities.
+            </p>
+            <span class="tag">Electrical Installations</span>
+            <span class="tag">Maintenance</span>
+          </div>
+
+          <div class="card">
+            <div class="project-number">PROJECT AREA 03</div>
+            <h3>Industrial Power Generation</h3>
+            <p>
+              Practical exposure to cogeneration
+              power plant systems, industrial motors,
+              generator synchronization, and electrical
+              maintenance at Kakira Sugar Power Plant.
+            </p>
+            <span class="tag">Power Generation</span>
+            <span class="tag">Industrial Systems</span>
+          </div>
+
+          <div class="card">
+            <div class="project-number">PROJECT AREA 04</div>
+            <h3>Hybrid Renewable Energy Microgrid</h3>
+            <p>
+              Academic modelling and simulation of
+              a hybrid solar-wind renewable energy
+              system incorporating battery and
+              supercapacitor energy storage for
+              frequency stability.
+            </p>
+            <span class="tag">MATLAB / Simulink</span>
+            <span class="tag">Hybrid Energy Storage</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="content-section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div class="eyebrow">Academic Research</div>
+          <h2>Research & Publications</h2>
+        </div>
+
+        <div class="card">
+          <p class="status">Master's research — Towards completion</p>
+
+          <h3>
+            Design and Optimal Control of a Hybrid
+            Renewable Energy System with Advanced
+            Storage for Frequency Stability
+          </h3>
+
+          <p class="institution">Makerere University</p>
+
+          <p>
+            This research investigates frequency
+            stability in an islanded hybrid renewable
+            energy microgrid integrating solar PV,
+            wind generation, battery energy storage,
+            and supercapacitor energy storage.
+          </p>
+
+          <p style="margin-top:15px">
+            The study involves mathematical modelling,
+            MATLAB/Simulink simulations, Model Predictive
+            Control, and performance evaluation under
+            varying renewable generation and load conditions.
+          </p>
+
+          <div style="margin-top:15px">
+            <span class="tag">Frequency Stability</span>
+            <span class="tag">Model Predictive Control</span>
+            <span class="tag">Battery Storage</span>
+            <span class="tag">Supercapacitors</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:22px">
+          <h3>Journal Publications</h3>
+          <p>
+            Research manuscripts and journal publications
+            will be added here as they become available.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content-section">
+      <div class="container">
+
+        <div class="contact-box">
+          <div class="eyebrow">Get In Touch</div>
+
+          <h2>Let's Connect</h2>
+
+          <p style="color:var(--muted); margin:20px 0 28px">
+            I welcome opportunities for professional
+            collaboration, engineering projects,
+            power systems research, and academic engagement.
+          </p>
+
+          <a
+            href="https://github.com/byakikahezronjuma"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer">
+            Visit My GitHub Profile
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span>
+      Byakika Heziron Juma. All Rights Reserved.
+    </p>
+    <p>Electrical Engineer | Power Systems Researcher</p>
+  </footer>
+
+  <a href="#contact"
+     class="floating-contact"
+     aria-label="Go to contact section">
+    &#9993;
+  </a>
+
+  <!-- SLIDESHOW JAVASCRIPT -->
+  <script>
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    let currentSlide = 0;
+    let slideshowTimer;
+
+    function showSlide(index) {
+      slides[currentSlide].classList.remove("active");
+      dots[currentSlide].classList.remove("active");
+
+      currentSlide = index;
+
+      slides[currentSlide].classList.add("active");
+      dots[currentSlide].classList.add("active");
+
+      // Restart timer after manual selection
+      clearInterval(slideshowTimer);
+      startSlideshow();
+    }
+
+    function nextSlide() {
+      showSlide((currentSlide + 1) % slides.length);
+    }
+
+    function startSlideshow() {
+      slideshowTimer = setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+        dots[currentSlide].classList.remove("active");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("active");
+        dots[currentSlide].classList.add("active");
+      }, 8000);
+    }
+
+    // Start automatic slideshow
+    startSlideshow();
+
+    // Automatically update copyright year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
