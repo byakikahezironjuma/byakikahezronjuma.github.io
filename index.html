@@ -426,7 +426,7 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#home" class="logo">BYAKIKA HEZIRON JUMA<span>.</span></a>
+        <a href="#home" class="logo">BYAKIKA HEZIRON JUMA</a>
 
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
@@ -868,11 +868,256 @@
     <p>Electrical Engineer | Power Systems Researcher</p>
   </footer>
 
-  <a href="#contact"
-     class="floating-contact"
-     aria-label="Go to contact section">
-    &#9993;
-  </a>
+  
+<!-- FLOATING CONTACT BUTTON -->
+<button
+  type="button"
+  class="floating-contact"
+  id="contactButton"
+  aria-label="Open contact form"
+  aria-haspopup="dialog"
+  aria-controls="contactModal"
+  style="border:none;cursor:pointer;color:white;">
+  &#9993;
+</button>
+
+<!-- CONTACT FORM POPUP -->
+<div id="contactModal" class="contact-modal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="contactTitle"
+     hidden>
+
+  <div class="contact-popup">
+
+    <button type="button"
+      id="closeContact"
+      class="contact-close"
+      aria-label="Close contact form">
+      &times;
+    </button>
+
+    <h2 id="contactTitle">Contact Me</h2>
+
+    <p>
+      Have a question, engineering opportunity,
+      or research collaboration in mind?
+      Send me a message.
+    </p>
+
+    <form
+      action="https://formsubmit.co/bjhezron@gmail.com"
+      method="POST">
+
+      <input type="hidden"
+        name="_subject"
+        value="New Message From My Professional Website">
+
+      <input type="hidden"
+        name="_captcha"
+        value="true">
+
+      <input type="hidden"
+        name="_template"
+        value="table">
+
+      <label for="visitorName">Full Name *</label>
+      <input
+        id="visitorName"
+        type="text"
+        name="name"
+        placeholder="Your full name"
+        required>
+
+      <label for="visitorEmail">Email Address</label>
+      <input
+        id="visitorEmail"
+        type="email"
+        name="email"
+        placeholder="Your email address">
+
+      <label for="visitorPhone">Phone Number</label>
+      <input
+        id="visitorPhone"
+        type="tel"
+        name="phone"
+        placeholder="Your phone number">
+
+      <label for="visitorMessage">Your Message *</label>
+      <textarea
+        id="visitorMessage"
+        name="message"
+        rows="5"
+        placeholder="Write your message here..."
+        required></textarea>
+
+      <p class="contact-note">
+        Please provide at least an email address
+        or phone number so I can respond.
+      </p>
+
+      <button type="submit" class="contact-submit">
+        Send Message
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<style>
+  .contact-modal[hidden] {
+    display: none !important;
+  }
+
+  .contact-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .contact-popup {
+    position: relative;
+    background: #101f36;
+    border: 1px solid #345477;
+    border-radius: 18px;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    color: white;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  .contact-popup h2 {
+    color: #65b5ff;
+    margin-bottom: 10px;
+  }
+
+  .contact-popup p {
+    color: #a5b5cb;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .contact-close {
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contact-popup label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 14px;
+  }
+
+  .contact-popup input,
+  .contact-popup textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #385474;
+    border-radius: 8px;
+    background: #071426;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .contact-popup input:focus,
+  .contact-popup textarea:focus {
+    outline: 2px solid #2585ff;
+  }
+
+  .contact-popup .contact-note {
+    margin: 12px 0;
+    font-size: 12px;
+  }
+
+  .contact-submit {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 9px;
+    background: #2585ff;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .contact-submit:hover {
+    background: #126bda;
+  }
+</style>
+
+<script>
+  const contactButton =
+    document.getElementById("contactButton");
+
+  const contactModal =
+    document.getElementById("contactModal");
+
+  const closeContact =
+    document.getElementById("closeContact");
+
+  const visitorEmail =
+    document.getElementById("visitorEmail");
+
+  const visitorPhone =
+    document.getElementById("visitorPhone");
+
+  const contactForm =
+    contactModal.querySelector("form");
+
+  contactButton.addEventListener("click", function() {
+    contactModal.hidden = false;
+    document.body.style.overflow = "hidden";
+    document.getElementById("visitorName").focus();
+  });
+
+  function closeContactForm() {
+    contactModal.hidden = true;
+    document.body.style.overflow = "";
+    contactButton.focus();
+  }
+
+  closeContact.addEventListener("click", closeContactForm);
+
+  contactModal.addEventListener("click", function(event) {
+    if (event.target === contactModal) {
+      closeContactForm();
+    }
+  });
+
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape" && !contactModal.hidden) {
+      closeContactForm();
+    }
+  });
+
+  contactForm.addEventListener("submit", function(event) {
+    if (!visitorEmail.value.trim() &&
+        !visitorPhone.value.trim()) {
+      event.preventDefault();
+      alert("Please provide an email address or phone number.");
+      visitorEmail.focus();
+    }
+  });
+</script>
 
   <!-- SLIDESHOW JAVASCRIPT -->
   <script>
